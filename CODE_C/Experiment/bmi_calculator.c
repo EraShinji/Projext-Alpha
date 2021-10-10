@@ -18,7 +18,12 @@ int main()
     square = height*height;
     float result;
     result = weight/square;
-    printf("YOUR BMI INDEX IS %f.\n",result);
+    printf("YOUR BMI INDEX IS %0.2f.\n",result);
+    while (result < 20)
+    {
+        printf("your result is good");
+        return 0;
+    }
     return 0;
 }
 void instruction(void)
